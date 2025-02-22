@@ -204,7 +204,7 @@ proxy-groups:
   - {name: 新加坡策略, type: select, proxies: [新加坡自动, 新加坡均衡-散列, 新加坡均衡-轮询], include-all: true, filter: *FilterSG, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png}
   - {name: 日本策略, type: select, proxies: [日本自动, 日本均衡-散列, 日本均衡-轮询], include-all: true, filter: *FilterJP, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png}
   - {name: 韩国策略, type: select, proxies: [韩国自动, 韩国均衡-散列, 韩国均衡-轮询], include-all: true, filter: *FilterKR, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png}
-  - {name: 美国策略, type: select, proxies: [美国自动, 美国均衡-散列, 美国均衡-轮询], include-all: true, filter: *FilterUS, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png}
+  - {name: 美国策略, type: select, proxies: [美国自动, 美国均衡-散列, 美国均衡-轮询], include-all: true, filter: *FilterUS, exclude-filter: "Australia|Plus", icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png}
   - {name: 欧盟策略, type: select, proxies: [欧盟自动, 欧盟均衡-散列, 欧盟均衡-轮询], include-all: true, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
    # 其他策略
   - {name: 链式代理, type: relay, proxies: [中转机, 落地机], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TIDAL_1.png}
@@ -218,7 +218,7 @@ proxy-groups:
   - {name: 新加坡自动, <<: *UrlTest, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
   - {name: 日本自动, <<: *UrlTest, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
   - {name: 韩国自动, <<: *UrlTest, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
-  - {name: 美国自动, <<: *UrlTest, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
+  - {name: 美国自动, <<: *UrlTest, filter: *FilterUS, exclude-filter: "Australia|Plus", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
   - {name: 欧盟自动, <<: *UrlTest, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png}
   # 负载均衡-散列
   - {name: 香港均衡-散列, <<: *LoadBalanceCH, filter: *FilterHK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
@@ -226,7 +226,7 @@ proxy-groups:
   - {name: 新加坡均衡-散列, <<: *LoadBalanceCH, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   - {name: 日本均衡-散列, <<: *LoadBalanceCH, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   - {name: 韩国均衡-散列, <<: *LoadBalanceCH, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
-  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
+  - {name: 美国均衡-散列, <<: *LoadBalanceCH, filter: *FilterUS, exclude-filter: "Australia|Plus", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   - {name: 欧盟均衡-散列, <<: *LoadBalanceCH, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin_1.png}
   # 负载均衡-轮询
   - {name: 香港均衡-轮询, <<: *LoadBalanceCR, filter: *FilterHK, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
@@ -234,7 +234,7 @@ proxy-groups:
   - {name: 新加坡均衡-轮询, <<: *LoadBalanceCR, filter: *FilterSG, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
   - {name: 日本均衡-轮询, <<: *LoadBalanceCR, filter: *FilterJP, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
   - {name: 韩国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterKR, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
-  - {name: 美国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterUS, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
+  - {name: 美国均衡-轮询, <<: *LoadBalanceCR, filter: *FilterUS, exclude-filter: "Australia|Plus", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
   - {name: 欧盟均衡-轮询, <<: *LoadBalanceCR, filter: *FilterEU, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Round_Robin.png}
 
 # 远程规则集
