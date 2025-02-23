@@ -391,8 +391,6 @@ rules:
   - RULE-SET,category-public-tracker,REJECT-DROP
   # UK
   - RULE-SET,ukwifi,UK漫游
-  - AND,(GEOIP,GB),(NETWORK,UDP),(OR,(DST-PORT,500),(DST-PORT,4500)),UK漫游
-  - RULE-SET,UK,UK漫游
   # 域名路由
   - RULE-SET,fix-direct,直连
   - RULE-SET,XPTV,直连
