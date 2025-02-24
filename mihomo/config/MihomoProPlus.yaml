@@ -129,6 +129,7 @@ dns:
   nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
   fake-ip-filter:
     - 'rule-set:cn_domain,private_domain,fix-direct'
+    - '+.pub.3gppnetwork.org'
     - '*.lan'
     - '*.local'
     - '*.home.arpa'
