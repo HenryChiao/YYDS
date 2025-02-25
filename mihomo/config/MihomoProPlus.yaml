@@ -119,6 +119,10 @@ tun:
   stack: mixed
   dns-hijack: [any:53]
 
+hosts:
+  services.googleapis.cn: services.googleapis.com
+  cn.bing.com: bing.com
+
 dns:
   enable: true
   ipv6: true
