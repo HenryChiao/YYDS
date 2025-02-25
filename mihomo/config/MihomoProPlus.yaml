@@ -119,6 +119,11 @@ tun:
   stack: mixed
   dns-hijack: [any:53]
 
+hosts:
+  miwifi.com: 192.168.31.2
+  services.googleapis.cn: services.googleapis.com
+  cn.bing.com: www.bing.com
+
 dns:
   enable: true
   ipv6: true
