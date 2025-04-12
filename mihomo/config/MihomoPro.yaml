@@ -179,6 +179,7 @@ proxy-groups:
 
 # 远程规则集
 rule-providers: 
+  download:                  {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/download.yaml}
   location_ip:               {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/location_ip.yaml}
   XPTV:                      {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/XPTV.yaml}
   fix-direct:                {<<: *ClassicalYaml, url: https://git.imee.me/https://github.com/666OS/YYDS/raw/main/mihomo/rules/fix-direct.yaml}
@@ -262,6 +263,7 @@ rules:
   - RULE-SET,Line,社交平台
   - RULE-SET,category-social-media-!cn,社交平台
   - RULE-SET,cn_domain,国内网站
+  - RULE-SET,download,直连
   - RULE-SET,geolocation-!cn,国外网站
   # IP路由
   - RULE-SET,private_ip,国内网站,no-resolve
