@@ -126,6 +126,7 @@ dns:
     - +.market.xiaomi.com
     - +.push.apple.com
     - beiyong.dynuddns.net
+    - +.pub.3gppnetwork.org
 
 hosts:
   services.googleapis.cn: services.googleapis.com
@@ -292,5 +293,6 @@ rules:
   - RULE-SET,twitter_ip,Twitter,no-resolve
   - RULE-SET,telegram_ip,Telegram,no-resolve
   - RULE-SET,cn_ip,国内网站,no-resolve
+  - DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org,苹果服务
   - IP-CIDR,87.194.0.0/16,苹果服务,no-resolve
   - MATCH,漏网之鱼
